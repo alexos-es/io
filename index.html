@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Información Ordenada · Soporte y consultoría IT para autónomos y pymes</title>
+  <meta name="description" content="Servicios informáticos claros y asequibles: consultoría, soporte remoto, mantenimiento, seguridad y diseño web para autónomos y pequeñas empresas." />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta property="og:title" content="Información Ordenada" />
+  <meta property="og:description" content="Consultoría IT, soporte remoto y mantenimiento para autónomos y pymes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://informacionordenada.es/" />
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    :root{--bg:#0b1020;--panel:#0e1429;--text:#e5e7eb;--muted:#94a3b8;--brand:#22c55e;--brand-weak:#16a34a;--stroke:#1f2937}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,"Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";background:var(--bg);color:var(--text);scroll-behavior:smooth}
+    a{color:var(--text);text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:color-mix(in hsl, var(--bg) 85%, transparent);border-bottom:1px solid var(--stroke);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px}
+    .logo-badge{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--brand),var(--brand-weak));display:grid;place-items:center;font-size:16px;color:#04110a}
+    .nav a.link{opacity:.82;margin-left:18px}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:var(--brand);color:#04110a;border-radius:999px;padding:10px 16px;font-weight:600;border:1px solid #22c55e12}
+    .btn:hover{transform:translateY(-1px)}
+    .muted{color:var(--muted)}
+    .hero{padding:84px 0 54px;border-bottom:1px solid var(--stroke)}
+    .hero h1{font-size:42px;line-height:1.1;margin:0 0 14px}
+    .hero p{font-size:18px;color:var(--muted);max-width:720px;margin:0 0 28px}
+    .grid{display:grid;gap:16px}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    .cols-2{grid-template-columns:repeat(2,1fr)}
+    .card{background:var(--panel);border:1px solid var(--stroke);border-radius:18px;padding:18px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    section{padding:54px 0;border-bottom:1px solid var(--stroke)}
+    .kpi{display:flex;gap:18px;flex-wrap:wrap;margin-top:8px}
+    .kpi .item{background:#0a1226;border:1px dashed #223155;border-radius:14px;padding:10px 12px}
+    .plans .price{font-size:34px;font-weight:800}
+    .plans .desc{color:var(--muted);margin:6px 0 14px}
+    ul.clean{margin:0;padding-left:18px}
+    ul.clean li{margin:6px 0}
+    .cta{text-align:center;padding:56px 0}
+    .footer{display:grid;gap:16px;grid-template-columns:1fr auto;align-items:center;padding:22px 0}
+    .tag{font-size:12px;border:1px solid #1f2f4a;color:#9fb2d9;border-radius:999px;padding:4px 8px;display:inline-flex;gap:8px;align-items:center}
+    .section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+    .pill{border:1px solid #223155;border-radius:999px;padding:4px 10px;color:#9fb2d9;font-size:12px}
+    .faq dt{font-weight:700;margin-top:10px}
+    .faq dd{margin:6px 0 0 0;color:var(--muted)}
+    @media (max-width:880px){.cols-3{grid-template-columns:1fr}.cols-2{grid-template-columns:1fr}.hero h1{font-size:34px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-badge">io</div>
+        Información Ordenada
+      </div>
+      <nav>
+        <a class="link" href="#servicios">Servicios</a>
+        <a class="link" href="#planes">Planes</a>
+        <a class="link" href="#proceso">Proceso</a>
+        <a class="link" href="#faq">FAQ</a>
+        <a class="btn" href="mailto:hola@informacionordenada.es">Contactar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container" id="inicio">
+      <p class="tag">Simple · Claro · Sin sorpresas</p>
+      <h1>Orden en tu tecnología.<br/>Soporte y consultoría sin complicaciones.</h1>
+      <p>Diagnóstico, soporte y mantenimiento para que tus sistemas funcionen siempre. Comunicación directa y tarifas previsibles. También diseño web ligero y centrado en lo esencial.</p>
+      <div class="kpi">
+        <div class="item">Soporte 100% remoto</div>
+        <div class="item">Enfoque minimalista</div>
+        <div class="item">Sin permanencia</div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="container">
+        <div class="section-title">
+          <h2>Servicios</h2>
+          <span class="pill">Pensado para negocio pequeño</span>
+        </div>
+        <div class="grid cols-3">
+          <article class="card">
+            <h3>Consultoría IT</h3>
+            <p class="muted">Evaluación técnica, inventario básico y hoja de ruta priorizada.</p>
+            <ul class="clean">
+              <li>Auditoría ligera de equipos y cuentas</li>
+              <li>Recomendaciones de seguridad y copia</li>
+              <li>Plan de mejora por fases</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Soporte remoto</h3>
+            <p class="muted">Incidencias del día a día sin desplazamientos.</p>
+            <ul class="clean">
+              <li>Configuración de correo y ofimática</li>
+              <li>Actualizaciones y limpieza</li>
+              <li>Asistencia por videollamada</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Mantenimiento</h3>
+            <p class="muted">Tareas preventivas para que todo siga funcionando.</p>
+            <ul class="clean">
+              <li>Revisiones periódicas</li>
+              <li>Copias y verificación</li>
+              <li>Monitorización básica</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Seguridad y copias</h3>
+            <p class="muted">Protección contra pérdida de datos y malware.</p>
+            <ul class="clean">
+              <li>Antivirus y políticas básicas</li>
+              <li>Estrategia 3-2-1 de copias</li>
+              <li>Recuperación ante incidentes</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Diseño web</h3>
+            <p class="muted">Sitios de una página, rápidos y fáciles de mantener.</p>
+            <ul class="clean">
+              <li>Dominio y correo</li>
+              <li>SEO esencial</li>
+              <li>Hospedaje estático (GitHub Pages)</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Formación exprés</h3>
+            <p class="muted">Pequeñas sesiones prácticas para tu equipo.</p>
+            <ul class="clean">
+              <li>Buenas prácticas</li>
+              <li>Herramientas de productividad</li>
+              <li>Seguridad y contraseñas</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="planes" class="plans">
+      <div class="container">
+        <div class="section-title">
+          <h2>Planes de suscripción</h2>
+          <span class="pill">Precios orientativos · IVA no incluido</span>
+        </div>
+        <div class="grid cols-3">
+          <article class="card">
+            <h3>Esencial</h3>
+            <div class="price">19€ / mes</div>
+            <p class="desc">Para autónomos con 1 dispositivo.</p>
+            <ul class="clean">
+              <li>1 intervención remota/mes</li>
+              <li>Checklist trimestral</li>
+              <li>Asesoría por email</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Profesional</h3>
+            <div class="price">49€ / mes</div>
+            <p class="desc">Hasta 3 dispositivos.</p>
+            <ul class="clean">
+              <li>3 intervenciones remotas/mes</li>
+              <li>Mantenimiento mensual</li>
+              <li>Asesoría por email y chat</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Empresa</h3>
+            <div class="price">99€ / mes</div>
+            <p class="desc">Hasta 6 dispositivos.</p>
+            <ul class="clean">
+              <li>Soporte remoto prioritario</li>
+              <li>Plan de copias y recuperación</li>
+              <li>Revisión de seguridad bimestral</li>
+            </ul>
+          </article>
+        </div>
+        <p class="muted" style="margin-top:10px">Proyectos puntuales y servicios fuera de plan se presupuestan previamente y por escrito.</p>
+      </div>
+    </section>
+
+    <section id="proceso">
+      <div class="container">
+        <div class="section-title">
+          <h2>Proceso</h2>
+          <span class="pill">Transparente y sin rodeos</span>
+        </div>
+        <div class="grid cols-3">
+          <article class="card"><h3>1 · Breve llamada</h3><p class="muted">Entiendo tu situación y definimos alcance.</p></article>
+          <article class="card"><h3>2 · Diagnóstico</h3><p class="muted">Inventario ligero y prioridades claras.</p></article>
+          <article class="card"><h3>3 · Ejecución</h3><p class="muted">Soporte y mejoras con entregables simples.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-title">
+          <h2>Preguntas frecuentes</h2>
+          <span class="pill">Respuestas breves</span>
+        </div>
+        <dl class="faq">
+          <dt>¿El servicio es presencial?</dt>
+          <dd>Principalmente remoto. Si hace falta, se valora desplazamiento y coste.</dd>
+          <dt>¿Hay permanencia?</dt>
+          <dd>No. Puedes darte de baja cuando quieras.</dd>
+          <dt>¿Puedo mantener el anonimato en la web?</dt>
+          <dd>Sí. El sitio no necesita mostrar datos personales; el contacto es por correo.</dd>
+          <dt>¿Cómo se factura?</dt>
+          <dd>Mensual o por proyecto. Presupuesto antes de empezar.</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="cta" id="contacto">
+      <div class="container">
+        <h2>¿Hablamos?</h2>
+        <p class="muted">Cuéntame qué necesitas y preparo una propuesta sencilla.</p>
+        <p><a class="btn" href="mailto:hola@informacionordenada.es">Escribir a hola@informacionordenada.es</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <small class="muted">© <span id="y"></span> Información Ordenada · Valencia, España</small>
+      <div style="display:flex;gap:8px;align-items:center">
+        <span class="pill">GitHub Pages</span>
+        <span class="pill">HTML estático</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear()
+  </script>
+  
+  <!-- Manifest for PWA icons -->
+  <link rel="manifest" href="/site.webmanifest" />
+</body>
+</html>
