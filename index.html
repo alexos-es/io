@@ -23,7 +23,7 @@
     header{position:sticky;top:0;background:rgba(255,255,255,.85);backdrop-filter:saturate(160%) blur(6px);border-bottom:1px solid var(--line);z-index:50}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
     .brand{display:flex;align-items:center;gap:12px}
-    .brand img{height:44px;width:auto;image-rendering:-webkit-optimize-contrast}
+    .brand img{height:72px;width:auto;image-rendering:-webkit-optimize-contrast}
     .nav a.link{opacity:.8;margin-left:18px}
     .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--fg);border-radius:999px;padding:10px 16px;font-weight:600}
     .btn:hover{transform:translateY(-1px)}
@@ -219,26 +219,25 @@
           <a class="btn" href="mailto:hola@informacionordenada.es">hola@informacionordenada.es</a>
           <a class="btn" href="https://wa.me/34684784784?text=Hola%20Información%20Ordenada,%20quisiera%20hacer%20una%20consulta" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">Contactar por WhatsApp</a>
         </p>
+        <p style="margin-top:18px">
+          <img src="/whatsapp_contact_qr.png" alt="QR WhatsApp Información Ordenada" width="140" height="140" loading="lazy" />
+        </p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container footer" style="border-top:1px solid var(--line)">
-      <small class="desc">© <span id="y"></span> Información Ordenada · Valencia, España</small>
-      <div style="display:flex;gap:8px;align-items:center">
-        <span class="pill">GitHub Pages</span>
-        <span class="pill">HTML estático</span>
-      </div>
+ <footer>
+  <div class="container footer" style="border-top:1px solid var(--line)">
+    <small class="desc">© <span id="y"></span> Información Ordenada · Valencia, España</small>
+    <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+      <a class="pill" href="/legal.html">Aviso legal</a>
+      <a class="pill" href="/privacidad.html">Privacidad</a>
+      <span class="pill">GitHub Pages</span>
+      <span class="pill">HTML estático</span>
     </div>
-    <section id="legal" class="container" style="padding:40px 0;border-top:1px solid #e5e7eb;">
-  <h3>Aviso legal y política de privacidad</h3>
-  <p>Este sitio pertenece a <strong>Alexos</strong> (Información Ordenada). 
-  No utiliza cookies ni recopila datos personales más allá de los estrictamente necesarios para la comunicación por correo o WhatsApp. 
-  Puedes leer la versión completa del aviso legal y la política de privacidad <a href="#legal-full">aquí</a>.</p>
-</section>
+  </div>
+</footer>
 
-  </footer>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
