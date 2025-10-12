@@ -23,7 +23,7 @@
     header{position:sticky;top:0;background:rgba(255,255,255,.85);backdrop-filter:saturate(160%) blur(6px);border-bottom:1px solid var(--line);z-index:50}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
     .brand{display:flex;align-items:center;gap:12px}
-    .brand img{height:28px;width:auto;image-rendering:-webkit-optimize-contrast}
+    .brand img{height:44px;width:auto;image-rendering:-webkit-optimize-contrast}
     .nav a.link{opacity:.8;margin-left:18px}
     .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--fg);border-radius:999px;padding:10px 16px;font-weight:600}
     .btn:hover{transform:translateY(-1px)}
@@ -62,15 +62,15 @@
         <a class="link" href="#planes">Planes</a>
         <a class="link" href="#proceso">Proceso</a>
         <a class="link" href="#faq">FAQ</a>
-        <a class="btn" href="mailto:hola@informacionordenada.es">Contactar</a>
+        <a class="btn" href="mailto:hola@informacionordenada.es">Email</a>
+        <a class="btn" href="https://wa.me/34684784784?text=Hola%20Información%20Ordenada,%20quisiera%20hacer%20una%20consulta" target="_blank" rel="noopener">WhatsApp</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero container" id="inicio">
-      <span class="tag">Blanco y negro · Minimalista</span>
-      <h1>Información Ordenada<br/>Soporte y consultoría IT sin ruido.</h1>
+            <h1>Información Ordenada<br/>Soporte y consultoría IT sin ruido.</h1>
       <p>Servicios informáticos claros para autónomos y pymes: diagnóstico, soporte remoto, mantenimiento, seguridad y sitios web de una página. Comunicación directa y presupuestos sencillos.</p>
       <div class="kpi">
         <div class="item">100% remoto</div>
@@ -148,41 +148,41 @@
       <div class="container">
         <div class="section-title">
           <h2>Planes</h2>
-          <span class="pill">Precios orientativos · IVA no incluido</span>
+          <span class="pill">Suscripción mensual · IVA no incluido</span>
         </div>
         <div class="grid cols-3">
           <article class="card">
             <h3>Esencial</h3>
-            <div class="price">19€ / mes</div>
-            <p class="desc">1 dispositivo (autónomos).</p>
+            <div class="price">29€ / mes</div>
+            <p class="desc">Autónomos · 1-2 dispositivos.</p>
             <ul class="clean">
-              <li>1 intervención remota/mes</li>
+              <li>Hasta 2 intervenciones remotas/mes</li>
               <li>Checklist trimestral</li>
               <li>Asesoría por email</li>
             </ul>
           </article>
           <article class="card">
             <h3>Profesional</h3>
-            <div class="price">49€ / mes</div>
-            <p class="desc">Hasta 3 dispositivos.</p>
+            <div class="price">59€ / mes</div>
+            <p class="desc">Pequeño equipo · hasta 3-4 dispositivos.</p>
             <ul class="clean">
-              <li>3 intervenciones remotas/mes</li>
+              <li>Hasta 4 intervenciones remotas/mes</li>
               <li>Mantenimiento mensual</li>
               <li>Asesoría por email y chat</li>
             </ul>
           </article>
           <article class="card">
             <h3>Empresa</h3>
-            <div class="price">99€ / mes</div>
-            <p class="desc">Hasta 6 dispositivos.</p>
+            <div class="price">119€ / mes</div>
+            <p class="desc">Micropyme · hasta 6 dispositivos.</p>
             <ul class="clean">
-              <li>Soporte remoto prioritario</li>
-              <li>Plan de copias y recuperación</li>
-              <li>Revisión de seguridad bimestral</li>
+              <li>Hasta 8 intervenciones remotas/mes</li>
+              <li>Soporte prioritario</li>
+              <li>Plan de copias y revisión bimestral</li>
             </ul>
           </article>
         </div>
-        <p class="desc" style="margin-top:10px">Proyectos puntuales fuera de plan se presupuestan previamente por escrito.</p>
+        <p class="desc" style="margin-top:10px">Exceso de intervenciones o proyectos fuera de alcance se presupuestan aparte. Sin permanencia.</p>
       </div>
     </section>
 
@@ -215,7 +215,11 @@
       <div class="container">
         <h2>¿Hablamos?</h2>
         <p class="desc">Escribe y preparo una propuesta clara.</p>
-        <p><a class="btn" href="mailto:hola@informacionordenada.es">hola@informacionordenada.es</a></p>
+        <p style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap">
+          <a class="btn" href="mailto:hola@informacionordenada.es">hola@informacionordenada.es</a>
+          <a class="btn" href="https://wa.me/34684784784?text=Hola%20Información%20Ordenada,%20quisiera%20hacer%20una%20consulta" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">Contactar por WhatsApp</a>
+        </p>
+        <small class="desc">Sustituye 34XXXXXXXXX por tu número de WhatsApp Business en formato internacional (E.164).</small>
       </div>
     </section>
   </main>
@@ -226,7 +230,6 @@
       <div style="display:flex;gap:8px;align-items:center">
         <span class="pill">GitHub Pages</span>
         <span class="pill">HTML estático</span>
-        <span class="pill">B/N</span>
       </div>
     </div>
   </footer>
