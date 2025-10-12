@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Política de privacidad · Información Ordenada</title>
+  <meta name="description" content="Política de privacidad de informacionordenada.es (Información Ordenada)."/>
+  <link rel="icon" href="/favicon.ico" sizes="any"/>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+  <link rel="apple-touch-icon" href="/favicon-180.png"/>
+  <meta name="theme-color" content="#000000"/>
+  <style>
+    :root{--bg:#fff;--fg:#0a0a0a;--muted:#6b7280;--line:#e5e7eb}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;background:var(--bg);color:var(--fg)}
+    a{color:var(--fg);text-decoration:none}
+    .container{max-width:860px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;background:rgba(255,255,255,.85);backdrop-filter:saturate(160%) blur(6px);border-bottom:1px solid var(--line);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:40px}
+    main{padding:48px 0}
+    h1{font-size:32px;margin:0 0 8px}
+    h2{font-size:20px;margin:26px 0 8px}
+    p,li{line-height:1.7}
+    .muted{color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:22px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><a href="/"><img src="/logo_bw.png" alt="Información Ordenada"/></a></div>
+      <nav>
+        <a href="/" style="margin-right:14px">Inicio</a>
+        <a href="/legal.html">Aviso legal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Política de privacidad</h1>
+    <p class="muted">Última actualización: octubre de 2025</p>
+
+    <h2>1. Responsable</h2>
+    <p>A.O.S. — <a href="mailto:hola@informacionordenada.es">hola@informacionordenada.es</a></p>
+
+    <h2>2. Datos tratados</h2>
+    <ul>
+      <li>Datos identificativos (nombre, email o teléfono) facilitados voluntariamente por el usuario al contactar por correo o WhatsApp.</li>
+      <li>No se recogen datos personales mediante formularios ni se emplean cookies de análisis.</li>
+    </ul>
+
+    <h2>3. Finalidad y base legal</h2>
+    <ul>
+      <li>Atender consultas y prestar servicios profesionales a petición del usuario.</li>
+      <li>Base legal: consentimiento del interesado al iniciar el contacto.</li>
+    </ul>
+
+    <h2>4. Conservación</h2>
+    <p>Se conservarán los datos el tiempo necesario para mantener la relación profesional o atender la consulta.</p>
+
+    <h2>5. Destinatarios</h2>
+    <p>No se ceden datos a terceros, salvo obligación legal o servicios de soporte técnico (alojamiento estático, correo, etc.).</p>
+
+    <h2>6. Derechos del usuario</h2>
+    <p>Puede ejercer los derechos de acceso, rectificación, supresión, limitación y oposición escribiendo a <a href="mailto:hola@informacionordenada.es">hola@informacionordenada.es</a>.</p>
+
+    <h2>7. Cookies</h2>
+    <p>Este sitio no utiliza cookies propias ni de terceros con fines analíticos o publicitarios.</p>
+
+    <h2>8. Cambios</h2>
+    <p>La presente política puede actualizarse para reflejar cambios normativos o del servicio. La fecha de la última actualización figura al inicio.</p>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+      <small class="muted">© <span id="y"></span> Información Ordenada</small>
+      <div style="display:flex;gap:10px">
+        <a href="/legal.html">Aviso legal</a>
+        <span class="muted">·</span>
+        <a href="/privacidad.html">Privacidad</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
