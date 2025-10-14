@@ -1,33 +1,6 @@
 <!doctype html>
 <html lang="es">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Aviso legal · Información Ordenada</title>
-  <meta name="description" content="Aviso legal del sitio informacionordenada.es (Información Ordenada)."/>
-  <link rel="icon" href="/favicon.ico" sizes="any"/>
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
-  <link rel="manifest" href="/site.webmanifest"/>
-  <link rel="apple-touch-icon" href="/favicon-180.png"/>
-  <meta name="theme-color" content="#000000"/>
-  <style>
-    :root{--bg:#fff;--fg:#0a0a0a;--muted:#6b7280;--line:#e5e7eb}
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;background:var(--bg);color:var(--fg)}
-    a{color:var(--fg);text-decoration:none}
-    .container{max-width:860px;margin:0 auto;padding:0 20px}
-    header{position:sticky;top:0;background:rgba(255,255,255,.85);backdrop-filter:saturate(160%) blur(6px);border-bottom:1px solid var(--line);z-index:50}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img{height:40px}
-    main{padding:48px 0}
-    h1{font-size:32px;margin:0 0 8px}
-    h2{font-size:20px;margin:26px 0 8px}
-    p,li{line-height:1.7}
-    .muted{color:var(--muted)}
-    footer{border-top:1px solid var(--line);padding:22px 0}
-  </style>
-</head>
+{% include head.html %}
 <body>
   <header>
     <div class="container nav">
