@@ -1,2 +1,4 @@
 markdown: kramdown
 theme: null
+url: https://informacionordenada.es
+permalink: pretty
