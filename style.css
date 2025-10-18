@@ -33,6 +33,30 @@ footer{padding:16px 0;margin-top:20px}
 .io-paylist img { display: block; filter: grayscale(1) opacity(.85); transition: filter .2s ease; }
 .io-paylist img:hover { filter: none; }
 
+.io-paylist {
+  display: flex;
+  flex-wrap: wrap;          /* Permite que se ajusten si hay poco espacio */
+  gap: 10px;                /* Espaciado entre logos */
+  justify-content: start;   /* Alineación a la izquierda */
+  align-items: center;
+  list-style: none;         /* Quita viñetas */
+  padding: 0;
+  margin: 0;
+}
+
+.io-paylist li img {
+  height: 28px;             /* Ajusta el tamaño uniforme */
+  width: auto;
+  display: block;
+  filter: grayscale(1) opacity(0.85);
+  transition: filter 0.2s ease;
+}
+
+.io-paylist li img:hover {
+  filter: none;
+}
+
+
 /* Iconos sociales */
 .social-icons {
   display: flex;
