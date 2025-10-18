@@ -25,8 +25,19 @@ nav a{margin-left:10px}
 .desc{color:var(--muted);margin:8px 0}
 .price{font-size:22px;font-weight:600;margin:6px 0}
 .cta{text-align:center;padding:40px 20px;border-top:1px solid var(--line)}
-footer{padding:16px 0;margin-top:20px}
-.footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer{padding:16px 0;margin-top:20px;border-top:1px solid var(--line)}
+.footer{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.footer__column{display:flex;flex-direction:column;gap:12px;flex:1 1 280px}
+.footer__main{max-width:420px}
+.footer__side{gap:16px}
+.footer__links{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.footer__map iframe{border:0;border-radius:12px;min-height:220px}
+.payments{display:grid;gap:8px}
+.payments strong{font-size:.95rem}
+.payments__actions{display:flex;gap:8px;flex-wrap:wrap}
+.payments__details{margin-top:4px}
+.payments__details summary{display:inline-flex;cursor:pointer}
+.payments__details>div{margin-top:8px;border:1px dashed var(--line);padding:10px;border-radius:8px;line-height:1.5}
 .muted{color:var(--muted)}
 
 /* Formas de pago */
