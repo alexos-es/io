@@ -7,7 +7,7 @@ a:hover{text-decoration:underline}
 .container{max-width:1050px;margin:0 auto;padding:20px}
 header{border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:10}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand img{height:44px}
+.brand img{height:67px}
 nav a{margin-left:10px}
 .btn{border:1px solid var(--fg);padding:8px 12px;border-radius:999px;display:inline-block}
 .hero{padding:60px 20px;text-align:center}
@@ -29,7 +29,10 @@ footer{padding:16px 0;margin-top:20px}
 .footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .muted{color:var(--muted)}
 /* social icons hover */
-.social-icons a svg{transition:fill .2s, transform .2s}
-.social-icons a:hover svg{transform:translateY(-2px)}
-.social-icons a.instagram:hover svg{fill:#e4405f}
-.social-icons a.linkedin:hover svg{fill:#0077b5}
+.social-icons a svg { transition: fill .2s, transform .2s; }
+.social-icons a:hover svg { transform: translateY(-2px); }
+.social-icons a.instagram:hover svg { fill: #e4405f; }
+.social-icons a.linkedin:hover svg { fill: #0077b5; }
+.social-icons a.google:hover svg { fill: #4285F4; }
+
+
