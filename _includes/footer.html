@@ -1,0 +1,20 @@
+<footer>
+  <div class="container footer" style="border-top:1px solid var(--line)">
+    <small class="desc">© <span id="y"></span> Información Ordenada · Valencia, España</small>
+    <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+      <a class="pill" href="{{ '/legal.html' | relative_url }}">Aviso legal</a>
+      <a class="pill" href="{{ '/privacidad.html' | relative_url }}">Privacidad</a>
+      <span class="pill">GitHub Pages</span>
+      <span class="pill">HTML estático</span>
+    </div>
+    <div class="social-icons" style="margin-top:12px;display:flex;gap:10px;align-items:center;">
+      <a class="instagram" href="https://www.instagram.com/informacionordenada/" target="_blank" rel="noopener" aria-label="Instagram Información Ordenada">
+        <svg viewBox="0 0 448 512" width="20" height="20" fill="#111"><path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.34-30.34C298,125.33,224,125.33,224,125.33s-74,0-94.37,5.95a54,54,0,0,0-30.34,30.34C93.33,146,93.33,220,93.33,220s0,74,5.95,94.37a54,54,0,0,0,30.34,30.34C146,349.33,220,349.33,220,349.33s74,0,94.37-5.95a54,54,0,0,0,30.34-30.34C349.33,294,349.33,220,349.33,220S349.33,146,348.71,161.66ZM224,338a82,82,0,1,1,82-82A82,82,0,0,1,224,338ZM308,179.47a19.2,19.2,0,1,1,19.2-19.2A19.21,19.21,0,0,1,308,179.47Z"/></svg>
+      </a>
+      <a class="linkedin" href="https://www.linkedin.com/company/105128702" target="_blank" rel="noopener" aria-label="LinkedIn Información Ordenada">
+        <svg viewBox="0 0 448 512" width="20" height="20" fill="#111"><path d="M100.28 448H7.4V148.9h92.88zm-46.44-340C24.8 108 0 83.2 0 52.4 0 23.5 24.8 0 53.84 0s53.8 23.5 53.8 52.4c0 30.8-24.8 55.6-53.8 55.6zM447.9 448h-92.6V302.4c0-34.7-.7-79.4-48.4-79.4-48.5 0-55.9 37.9-55.9 77v148H158.3V148.9h89v40.8h1.3c12.4-23.5 42.6-48.4 87.8-48.4 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
