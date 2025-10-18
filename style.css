@@ -27,3 +27,16 @@ nav a{margin-left:10px}
 .cta{text-align:center;padding:40px 20px;border-top:1px solid var(--line)}
 footer{padding:16px 0;margin-top:20px}
 .footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.social-icons a svg {
+  transition: fill 0.2s ease-in-out, transform 0.2s;
+}
+.social-icons a:hover svg {
+  transform: translateY(-2px);
+}
+.social-icons a.instagram:hover svg {
+  fill: #e4405f;
+}
+.social-icons a.linkedin:hover svg {
+  fill: #0077b5;
+}
+
