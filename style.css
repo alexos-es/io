@@ -28,32 +28,41 @@ nav a{margin-left:10px}
 footer{padding:16px 0;margin-top:20px}
 .footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .muted{color:var(--muted)}
-/* social icons hover */
-.social-icons a svg { transition: fill .2s, transform .2s; }
-.social-icons a:hover svg { transform: translateY(-2px); }
-.social-icons a.instagram:hover svg { fill: #e4405f; }
-.social-icons a.linkedin:hover svg { fill: #0077b5; }
-.social-icons a.google:hover svg { fill: #4285F4; }
-/* Grupo de iconos */
-.social-icons{display:flex;gap:10px;align-items:center}
-.social{display:inline-flex;align-items:center;justify-content:center;
-        width:40px;height:40px;border:1px solid var(--line);
-        border-radius:999px;transition:transform .15s ease, color .15s ease}
-.social svg{width:20px;height:20px}
-.social:hover{transform:translateY(-2px)}
-.social:focus-visible{outline:3px solid #5891ff;outline-offset:2px;border-color:#5891ff}
-
-/* Colores por red (usa currentColor) */
-.social{color:#111;background:#fff}
-.social.instagram:hover{color:#e4405f}
-.social.linkedin:hover{color:#0077b5}
-.social.gmb:hover{color:#4285F4}
-
-/* Dark mode opcional (si algún día lo activas) */
-/*
-@media (prefers-color-scheme: dark){
-  .social{color:#eee;background:#111;border-color:#333}
+.social-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
-*/
 
+.social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--fg);
+  background: #fff;
+  transition: transform .15s ease, color .15s ease, border-color .15s ease;
+}
 
+.social svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social:hover {
+  transform: translateY(-2px);
+}
+
+.social:focus-visible {
+  outline: 3px solid #5891ff;
+  outline-offset: 2px;
+  border-color: #5891ff;
+}
+
+/* Colores por red */
+.social.instagram:hover { color: #e4405f; border-color: #e4405f; }
+.social.linkedin:hover { color: #0077b5; border-color: #0077b5; }
+.social.gmb:hover { color: #4285F4; border-color: #4285F4; }
