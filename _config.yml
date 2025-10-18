@@ -1,4 +1,5 @@
+url: https://informacionordenada.es
+baseurl: ""
 markdown: kramdown
 theme: null
-url: https://informacionordenada.es
 permalink: pretty
