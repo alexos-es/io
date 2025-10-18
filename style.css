@@ -28,6 +28,12 @@ nav a{margin-left:10px}
 footer{padding:16px 0;margin-top:20px}
 .footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .muted{color:var(--muted)}
+
+/* Formas de pago */
+.io-paylist img { display: block; filter: grayscale(1) opacity(.85); transition: filter .2s ease; }
+.io-paylist img:hover { filter: none; }
+
+/* Iconos sociales */
 .social-icons {
   display: flex;
   gap: 10px;
