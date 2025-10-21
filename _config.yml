@@ -1,5 +1,23 @@
-url: https://informacionordenada.es
-baseurl: ""
+title: "Información Ordenada"
+email: "hola@informacionordenada.es"
+description: "Presencia técnica permanente y tranquilidad digital para autónomos y pequeños negocios."
+baseurl: "" # el repositorio de usuario/proyecto puede requerir baseurl
+url: ""     # se completará automáticamente en GitHub Pages
+lang: es
+timezone: "Europe/Madrid"
+
+# Colección de casos de éxito
+collections:
+  casos:
+    output: true
+    permalink: /casos/:title/
+
+# Markdown y plugins compatibles con GitHub Pages
 markdown: kramdown
-theme: null
-permalink: pretty
+kramdown:
+  input: GFM
+
+# Configuración de construcción de GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

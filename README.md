@@ -1,37 +1,41 @@
-# Información Ordenada
+# Información Ordenada · Jekyll + Bootstrap
 
-**Información Ordenada** es una iniciativa independiente orientada a ofrecer servicios informáticos claros, estructurados y accesibles para **autónomos y pequeñas empresas**.  
-El proyecto nace con un enfoque práctico: **ordenar la tecnología** para que funcione sin complicaciones.
+Sitio estático minimalista listo para GitHub Pages, con colección de **Casos de éxito**.
 
+## Uso rápido
+
+1. Sube todo el contenido a tu repositorio de GitHub (p.ej. `informacionordenada.github.io` o `/docs`).
+2. En *Settings → Pages*, selecciona la rama y carpeta raíz.
+3. Edita `_config.yml` si tu repositorio es de proyecto y requiere `baseurl`.
+4. Modifica `index.md` con tus textos de Servicios, Planes, Proceso y FAQ.
+5. Añade más casos en `_casos/` con este patrón:
+
+```yaml
+---
+layout: caso
+title: "Título del caso"
+date: 2025-10-21
+sector: "Sector"
+resumen: "Resumen breve"
+retos:
+  - "Reto 1"
+  - "Reto 2"
+solucion: >
+  Texto de la solución.
+resultados:
+  - "Resultado 1"
+  - "Resultado 2"
+stack:
+  - "Tecnología 1"
+  - "Tecnología 2"
 ---
 
-## 🧩 Qué hacemos
+Contenido del caso…
+```
 
-- **Consultoría IT** → diagnóstico, inventario básico y hoja de ruta por prioridades.  
-- **Soporte remoto** → resolución de incidencias cotidianas sin desplazamientos.  
-- **Mantenimiento preventivo** → revisiones, copias y supervisión básica.  
-- **Seguridad y copias de respaldo** → estrategia 3-2-1 y recuperación ante incidentes.  
-- **Diseño web** → sitios de una página, rápidos y fáciles de mantener.  
-- **Formación exprés** → sesiones prácticas para equipos pequeños.
+## Personalización
 
----
-
-## 💡 Filosofía
-
-> *Menos ruido, más claridad.*
-
-Creemos que la tecnología debe ser comprensible, previsible y segura.  
-Cada servicio se plantea con un enfoque **minimalista**, sin permanencias, sin intermediarios y con una comunicación directa.
-
----
-
-## 🖥️ Web
-
-👉 [https://informacionordenada.es](https://informacionordenada.es)
-
-La web está construida en HTML estático y hospedada en **GitHub Pages**, con diseño minimalista en blanco y negro.
-
----
-
-## 🧱 Estructura del repositorio
-
+- Logo: sustituye `assets/img/logo.jpg`.
+- Estilos: `assets/css/styles.css`.
+- Componentes compartidos: `_includes/header.html`, `_includes/footer.html`, `_includes/cookies.html`.
+- Plantillas: `_layouts/default.html`, `_layouts/caso.html`.
