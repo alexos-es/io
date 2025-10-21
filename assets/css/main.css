@@ -1,0 +1,14 @@
+.container { max-width: 1100px; }
+.hero { padding: 4rem 0; text-align: center; }
+.kpi { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:12px; }
+.kpi .item, .pill { border:1px solid #ddd; border-radius:999px; padding:.35rem .75rem; font-size:.9rem; }
+.section-title { display:flex; align-items:center; gap:10px; justify-content:space-between; margin:2rem 0 1rem; }
+.desc { color:#555; }
+.grid { display:grid; gap:16px; }
+.grid.cols-3 { grid-template-columns: repeat(1,1fr); }
+@media (min-width:768px){ .grid.cols-3{ grid-template-columns: repeat(3,1fr); } }
+.card article, article.card { /* por si hay estilos heredados */ }
+article.card { border:1px solid #eee; border-radius:12px; padding:16px; background:#fff; }
+.price { font-weight:700; margin:.5rem 0 0; }
+.cta { padding:3rem 0; text-align:center; }
+.btn { display:inline-block; border:1px solid #222; padding:.5rem .9rem; border-radius:8px; text-decoration:none; }
