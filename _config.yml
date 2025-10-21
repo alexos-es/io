@@ -1,5 +1,5 @@
 url: https://informacionordenada.es
 baseurl: ""
 markdown: kramdown
-theme: Merlot
+theme: jekyll-theme-minimal
 permalink: pretty
