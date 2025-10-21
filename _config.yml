@@ -8,9 +8,9 @@ timezone: "Europe/Madrid"
 
 # Colección de casos de éxito
 collections:
-  casos:
+  content:
     output: true
-    permalink: /casos/:title/
+    permalink: /:path/
 
 # Markdown y plugins compatibles con GitHub Pages
 markdown: kramdown
