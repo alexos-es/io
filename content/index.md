@@ -1,10 +1,11 @@
 ---
+layout: default
 title: "Información Ordenada · Consultoría y soporte IT"
 slug: ""
 description: "Soporte y consultoría IT claros para autónomos y pymes: diagnóstico, soporte remoto, mantenimiento, seguridad y sitios web de una página."
 date: "2025-10-21"
-layout: "page"
 ---
+
 
 # Información Ordenada
 **Soporte y consultoría IT sin ruido.**  
