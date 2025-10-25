@@ -1,9 +1,9 @@
 ---
-title: "Aviso legal"
-slug: "legal"
-description: "Información legal del sitio Información Ordenada."
-date: "2025-10-21"
-layout: "page"
+layout: default
+title: "Aviso legal · Información Ordenada"
+description: "Información legal del sitio informacionordenada.es: titularidad, contacto y condiciones de uso."
+permalink: /legal/
+robots: noindex,follow
 ---
 
 # Aviso legal

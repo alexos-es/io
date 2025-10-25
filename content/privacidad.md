@@ -1,9 +1,9 @@
 ---
-title: "Política de privacidad"
-slug: "privacidad"
-description: "Tratamiento de datos personales en Información Ordenada."
-date: "2025-10-21"
-layout: "page"
+layout: default
+title: "Política de privacidad · Información Ordenada"
+description: "Política de privacidad y tratamiento de datos personales en informacionordenada.es."
+permalink: /privacidad/
+robots: index,follow
 ---
 
 # Política de privacidad
