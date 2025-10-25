@@ -1,18 +1,86 @@
-.container { max-width: 1100px; }
-.hero { padding: 4rem 0; text-align: center; }
+/* ==========================================================================
+   Información Ordenada · CSS mínimo para convivir con Bootstrap 5
+   --------------------------------------------------------------------------
+   - Mantiene estética en blanco/negro y look limpio.
+   - Evita duplicar utilidades ya presentes en Bootstrap.
+   - Deja solo ajustes de marca y pequeños refinados.
+   ========================================================================== */
+
+/* Base */
+:root {
+  --io-max: 1100px;
+  --io-line: #e5e5e5;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+               Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji",
+               "Segoe UI Symbol";
+  line-height: 1.6;
+  color: #111;
+  background: #fff;
+}
+
+/* Contenedor más estrecho que el container de Bootstrap por estética */
+.container { max-width: var(--io-max); }
+
+/* Tipografía y ritmo vertical */
+h1, h2, h3 { letter-spacing: -0.2px; }
+.lead { color: #333; }
+
+/* Imágenes fluidas por defecto */
+img { max-width: 100%; height: auto; }
+
+/* Separadores suaves para bloques secciones */
+section { scroll-margin-top: 80px; }
+
+/* Badges redondeadas “píldora” (ya lo hace Bootstrap, solo refinamos borde) */
+.badge.border { border-color: #ddd !important; }
+
+/* Tarjetas: suavizamos esquinas y sombras muy ligeras */
+.card {
+  border-color: #eee;
+  border-radius: .9rem;
+}
+.card-body ul { padding-left: 1.1rem; }
+.card-body li { margin-bottom: .25rem; }
+
+/* Bloques tipo “kpi” heredados (seguros si reaparecen en otras páginas) */
 .kpi { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:12px; }
-.kpi .item, .pill { border:1px solid #ddd; border-radius:999px; padding:.35rem .75rem; font-size:.9rem; }
-.section-title { display:flex; align-items:center; gap:10px; justify-content:space-between; margin:2rem 0 1rem; }
-.desc { color:#555; }
-.grid { display:grid; gap:16px; }
-.grid.cols-3 { grid-template-columns: repeat(1,1fr); }
-@media (min-width:768px){ .grid.cols-3{ grid-template-columns: repeat(3,1fr); } }
-.card article, article.card { /* por si hay estilos heredados */ }
-article.card { border:1px solid #eee; border-radius:12px; padding:16px; background:#fff; }
-.price { font-weight:700; margin:.5rem 0 0; }
-.cta { padding:3rem 0; text-align:center; }
-.btn { display:inline-block; border:1px solid #222; padding:.5rem .9rem; border-radius:8px; text-decoration:none; }
+.kpi .item {
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  padding: .35rem .75rem;
+  font-size: .9rem;
+}
 
+/* Título de sección heredado (header + etiqueta) */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  margin: 2rem 0 1rem;
+}
 
-/* IO Bootstrap tweaks */
-.container { max-width: 1100px; }
+/* Enlaces y botones */
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+.btn { border-radius: .8rem; }
+.btn-outline-dark { border-color: #111; }
+
+/* Footer (si en tu include usas estas clases) */
+.footer { border-top: 1px solid var(--io-line); padding: 18px 0; }
+.footer .desc { color: #555; }
+.footer .pill {
+  display: inline-block;
+  border: 1px solid #ddd; border-radius: 999px;
+  padding: .35rem .75rem; font-size: .9rem;
+}
+.footer .social-icons { display:flex; gap:10px; flex-wrap:wrap; }
+
+/* Accesibilidad / movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
