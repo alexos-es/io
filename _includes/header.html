@@ -1,42 +1,44 @@
-<!-- NAVBAR -->
-<header class="border-bottom">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container">
-      <!-- Marca -->
-      <a class="navbar-brand d-flex align-items-center gap-2" href="{{ '/' | relative_url }}">
-        <img src="{{ '/logo_bw.png' | relative_url }}" alt="Información Ordenada" height="28" width="28" loading="lazy">
-        <span class="fw-semibold">Información Ordenada</span>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ '/InOr titulo.jpg' | relative_url }}" alt="Información Ordenada" />
       </a>
-
-      <!-- Botón hamburguesa -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ioNavbar"
-              aria-controls="ioNavbar" aria-expanded="false" aria-label="Abrir navegación">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Enlaces -->
-      <div class="collapse navbar-collapse" id="ioNavbar">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="{{ '/#servicios' | relative_url }}">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{ '/#planes'    | relative_url }}">Planes</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{ '/#proceso'   | relative_url }}">Proceso</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{ '/#faq'       | relative_url }}">FAQ</a></li>
-
-          <li class="nav-item ms-lg-3">
-            <a class="btn btn-sm btn-dark" href="mailto:hola@informacionordenada.es" aria-label="Enviar email">
-              Email
-            </a>
-          </li>
-          <li class="nav-item ms-lg-2">
-            <a class="btn btn-sm btn-outline-dark"
-               href="https://wa.me/34684784784?text=Hola%20Información%20Ordenada,%20quisiera%20hacer%20una%20consulta"
-               target="_blank" rel="noopener"
-               aria-label="Contactar por WhatsApp">
-              WhatsApp
-            </a>
-          </li>
-        </ul>
-      </div>
     </div>
-  </nav>
+
+    <nav style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+      <a class="link" href="{{ '/#servicios' | relative_url }}">Servicios</a>
+      <a class="link" href="{{ '/#planes' | relative_url }}">Planes</a>
+      <a class="link" href="{{ '/#proceso' | relative_url }}">Proceso</a>
+      <a class="link" href="{{ '/#faq' | relative_url }}">FAQ</a>
+
+      <a class="btn" href="mailto:hola@informacionordenada.es">Email</a>
+      <a class="btn" href="https://wa.me/34684784784?text=Hola%20Información%20Ordenada,%20quisiera%20hacer%20una%20consulta"
+         target="_blank" rel="noopener">WhatsApp</a>
+
+      <!-- Redes sociales -->
+      <div class="social-icons" role="navigation" aria-label="Redes sociales">
+        <a class="social instagram" href="https://www.instagram.com/informacionordenada/"
+           target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 448 512" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.34-30.34C298,125.33,224,125.33,224,125.33s-74,0-94.37,5.95a54,54,0,0,0-30.34,30.34C93.33,146,93.33,220,93.33,220s0,74,5.95,94.37a54,54,0,0,0,30.34,30.34C146,349.33,220,349.33,220,349.33s74,0,94.37-5.95a54,54,0,0,0,30.34-30.34C349.33,294,349.33,220,349.33,220S349.33,146,348.71,161.66ZM224,338a82,82,0,1,1,82-82A82,82,0,0,1,224,338ZM308,179.47a19.2,19.2,0,1,1,19.2-19.2A19.21,19.21,0,0,1,308,179.47Z"/>
+          </svg>
+        </a>
+
+        <a class="social linkedin" href="https://www.linkedin.com/company/105128702"
+           target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 448 512" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.84 108C24.8 108 0 83.2 0 52.4 0 23.5 24.8 0 53.84 0s53.8 23.5 53.8 52.4C107.6 83.2 83 108 53.84 108zM447.9 448h-92.6V302.4c0-34.7-.7-79.4-48.4-79.4-48.5 0-55.9 37.9-55.9 77v148H158.3V148.9h89v40.8h1.3c12.4-23.5 42.6-48.4 87.8-48.4 94 0 111.3 61.9 111.3 142.3V448z"/>
+          </svg>
+        </a>
+
+        <a class="social gmb" href="https://share.google/KiGo8yDyGI2n4OFKA"
+           target="_blank" rel="noopener" aria-label="Google Business">
+          <svg viewBox="0 0 488 512" width="20" height="20" aria-hidden="true">
+            <path fill="currentColor" d="M448 80h-85.5l-17.6 80H143.1L125.6 80H40c-22.1 0-40 17.9-40 40v48c0 2.2.2 4.3.6 6.4l57.9 273.7c4 19.1 20.8 33 40.3 33H389.1c19.5 0 36.3-13.9 40.3-33l57.9-273.7c.4-2.1.6-4.2.6-6.4v-48c0-22.1-17.9-40-40-40zM244 364c-44.1 0-80-35.9-80-80h48c0 17.7 14.3 32 32 32 17.7 0 32-14.3 32-32v-32h-32v-48h80v80c0 44.1-35.9 80-80 80z"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </div>
 </header>
