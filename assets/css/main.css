@@ -12,3 +12,7 @@ article.card { border:1px solid #eee; border-radius:12px; padding:16px; backgrou
 .price { font-weight:700; margin:.5rem 0 0; }
 .cta { padding:3rem 0; text-align:center; }
 .btn { display:inline-block; border:1px solid #222; padding:.5rem .9rem; border-radius:8px; text-decoration:none; }
+
+
+/* IO Bootstrap tweaks */
+.container { max-width: 1100px; }
