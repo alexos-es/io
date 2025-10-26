@@ -1,3 +1,97 @@
+---
+---
+
+/* ====== Dimensiones / layout propio ====== */
+.container { max-width: 1100px; }
+
+.hero { padding: 4rem 0; text-align: center; }
+.kpi { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:12px; }
+.kpi .item, .pill { border:1px solid #ddd; border-radius:999px; padding:.35rem .75rem; font-size:.9rem; }
+.section-title { display:flex; align-items:center; gap:10px; justify-content:space-between; margin:2rem 0 1rem; }
+.desc { color:#555; }
+.grid { display:grid; gap:16px; }
+.grid.cols-3 { grid-template-columns: repeat(1,1fr); }
+@media (min-width:768px){ .grid.cols-3{ grid-template-columns: repeat(3,1fr); } }
+article.card { border:1px solid #eee; border-radius:12px; padding:16px; background:#fff; }
+.price { font-weight:700; margin:.5rem 0 0; }
+.cta { padding:3rem 0; text-align:center; }
+
+/* ====== Paleta / tokens ====== */
+:root{
+  --io-primary: #3A86FF;      /* acento */
+  --io-primary-hover: color-mix(in oklab, var(--io-primary), black 12%); /* hover nativo */
+  --io-secondary: #F8F9FA;    /* fondo suave */
+  --io-dark: #111;            /* texto principal */
+  --io-muted: #6C757D;        /* texto secundario */
+  --io-border: #e6e6e6;
+}
+
+/* ====== Base ====== */
+body { color: var(--io-dark); background:#fff; }
+
+/* Enlaces y acentos (sin SCSS) */
+a {
+  color: var(--io-primary);
+  text-decoration: none;
+  transition: color .2s ease, opacity .2s ease;
+}
+a:hover,
+.nav-link:hover,
+.badge:hover { color: var(--io-primary-hover); }
+
+/* Pills y badges propias */
+.pill,
+.badge:not(.text-bg-*) {
+  background-color: var(--io-primary);
+  color: #fff !important;
+  border: none;
+}
+.pill:hover,
+.badge:not(.text-bg-*):hover {
+  background-color: var(--io-primary-hover);
+}
+
+/* NO pises los botones de Bootstrap (.btn) globalmente.
+   Si quieres un botón propio, usa .io-btn */
+.io-btn {
+  display:inline-block; padding:.5rem .9rem; border-radius:8px;
+  background: var(--io-primary); color:#fff; border:0;
+}
+.io-btn:hover { background: var(--io-primary-hover); }
+
+/* ====== Header / Navbar ====== */
+/* OJO: tu <header> tiene .bg-white. Si quieres que el navbar coja el fondo gris suave,
+   quita 'bg-white' del <header> o pon 'bg-white' en el <nav> si prefieres blanco. */
+.navbar { background-color: var(--io-secondary) !important; }
+.navbar .nav-link { font-weight: 500; color: inherit; }
+.navbar .nav-link.active { color: var(--io-primary) !important; }
+
+/* Logo */
+.io-logo { height:28px; width:auto; display:block; }
+@media (min-width: 992px){ .io-logo{ height:32px; } }
+
+/* ====== Footer ====== */
+footer { background-color: var(--io-secondary); color: var(--io-dark); }
+footer a:hover { color: var(--io-primary); }
+
+/* Redes: micro-animación */
+.io-social:hover i {
+  color: var(--io-primary) !important;
+  transform: scale(1.15);
+  transition: transform .2s ease, color .2s ease;
+}
+
+/* Pills más redondeadas */
+.badge.rounded-pill { border-radius: 2rem !important; padding: .5rem 1rem; }
+
+/* ====== Utilidades ====== */
+:root { --io-header-h: 64px; }
+@media (min-width:992px){ :root{ --io-header-h:72px; } }
+body { scroll-padding-top: var(--io-header-h); }
+
+---
+---
+
 /* ====== Dimensiones / layout propio ====== */
 .container { max-width: 1100px; }
 
