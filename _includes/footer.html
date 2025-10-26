@@ -1,74 +1,94 @@
-<footer>
-  <div class="container footer">
-    <div class="footer__column footer__main">
-      <small class="desc">
-        © <span id="y">{{ "now" | date: "%Y" }}</span> Información Ordenada ·
-        <a href="https://maps.app.goo.gl/PWRqe5FyUJcn8Xoh7" target="_blank" rel="noopener">
-          l'Horta Nord, Valencia, España
-        </a>
-      </small>
+<footer class="border-top mt-5 py-4">
+  <div class="container">
+    <!-- Fila principal: info + enlaces legales + redes -->
+    <div class="row gy-4 align-items-start">
+      <div class="col-12 col-md-6">
+        <small class="d-block mb-2">
+          © {{ "now" | date: "%Y" }} Información Ordenada ·
+          <a href="https://maps.app.goo.gl/PWRqe5FyUJcn8Xoh7" target="_blank" rel="noopener">l'Horta Nord, Valencia, España</a>
+        </small>
 
-      <nav class="footer__links" aria-label="Enlaces legales y técnicos">
-        <a class="pill" href="{{ '/legal/' | relative_url }}">Aviso legal</a>
-        <a class="pill" href="{{ '/privacidad/' | relative_url }}">Privacidad</a>
-        <span class="pill">GitHub Pages</span>
-        <span class="pill">HTML estático</span>
-      </nav>
-
-      <div class="social-icons" aria-label="Redes sociales">
-        <a class="instagram link-secondary" href="https://www.instagram.com/informacionordenada/" target="_blank" rel="noopener" aria-label="Instagram Información Ordenada">
-          <!-- usa currentColor para heredar color del texto -->
-          <svg viewBox="0 0 448 512" width="20" height="20" fill="currentColor" aria-hidden="true">
-            <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.34-30.34C298,125.33,224,125.33,224,125.33s-74,0-94.37,5.95a54,54,0,0,0-30.34,30.34C93.33,146,93.33,220,93.33,220s0,74,5.95,94.37a54,54,0,0,0,30.34,30.34C146,349.33,220,349.33,220,349.33s74,0,94.37-5.95a54,54,0,0,0,30.34-30.34C349.33,294,349.33,220,349.33,220S349.33,146,348.71,161.66ZM224,338a82,82,0,1,1,82-82A82,82,0,0,1,224,338ZM308,179.47a19.2,19.2,0,1,1,19.2-19.2A19.21,19.21,0,0,1,308,179.47Z"/>
-          </svg>
-        </a>
-
-        <a class="linkedin link-secondary" href="https://www.linkedin.com/company/105128702" target="_blank" rel="noopener" aria-label="LinkedIn Información Ordenada">
-          <svg viewBox="0 0 448 512" width="20" height="20" fill="currentColor" aria-hidden="true">
-            <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340C24.8 108 83.2 0 52.4 0 23.5 24.8 0 53.84 0s53.8 23.5 53.8 52.4c0 30.8-24.8 55.6-53.8 55.6zM447.9 448h-92.6V302.4c0-34.7-.7-79.4-48.4-79.4-48.5 0-55.9 37.9-55.9 77v148H158.3V148.9h89v40.8h1.3c12.4-23.5 42.6-48.4 87.8-48.4 94 0 111.3 61.9 111.3 142.3V448z"/>
-          </svg>
-        </a>
+        <nav class="d-flex flex-wrap gap-2" aria-label="Enlaces legales y técnicos">
+          <a class="badge rounded-pill text-bg-light text-decoration-none" href="{{ '/legal/' | relative_url }}">Aviso legal</a>
+          <a class="badge rounded-pill text-bg-light text-decoration-none" href="{{ '/privacidad/' | relative_url }}">Privacidad</a>
+          <span class="badge rounded-pill text-bg-light">GitHub Pages</span>
+          <span class="badge rounded-pill text-bg-light">HTML estático</span>
+        </nav>
       </div>
 
-      <small class="muted">Este sitio no utiliza cookies propias ni de terceros con fines analíticos o publicitarios.</small>
+      <div class="col-12 col-md-6">
+        <div class="d-flex align-items-center gap-3 justify-content-md-end">
+          <span class="text-muted small">Síguenos</span>
+          <!-- Redes (ver sección 2 para cómo cambiarlos) -->
+          <a class="text-body-secondary" href="https://www.linkedin.com/company/105128702" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.27 2.3-2.6 4.74-2.6C22.4 7.6 24 10 24 14.1V24h-5v-8.6c0-2.05-.04-4.7-2.86-4.7-2.86 0-3.3 2.23-3.3 4.55V24H8z"/>
+            </svg>
+          </a>
+          <a class="text-body-secondary" href="https://www.instagram.com/informacionordenada/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.9.26 2.4.43.6.23 1 .5 1.5.97.47.47.74.9.97 1.5.17.5.37 1.2.43 2.4.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.26 1.9-.43 2.4a3.9 3.9 0 0 1-.97 1.5 3.9 3.9 0 0 1-1.5.97c-.5.17-1.2.37-2.4.43-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.9-.26-2.4-.43a3.9 3.9 0 0 1-1.5-.97 3.9 3.9 0 0 1-.97-1.5c-.17-.5-.37-1.2-.43-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.26-1.9.43-2.4.23-.6.5-1 .97-1.5.47-.47.9-.74 1.5-.97.5-.17 1.2-.37 2.4-.43C8.4 2.2 8.8 2.2 12 2.2Zm0 3.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13Zm6.3-2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/>
+            </svg>
+          </a>
+          <a class="text-body-secondary" href="https://wa.me/34684784784?text=Hola%20Informaci%C3%B3n%20Ordenada" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.5 3.5A11 11 0 0 0 3 20.9L2 24l3.2-.84A11 11 0 1 0 20.5 3.5ZM12 21.3a9.3 9.3 0 0 1-4.7-1.3l-.34-.2-2.8.74.75-2.7-.22-.35A9.3 9.3 0 1 1 12 21.3Zm5.4-6.9c-.3-.16-1.8-.9-2-.98-.26-.1-.45-.16-.64.16-.19.32-.73.98-.9 1.18-.16.2-.33.22-.62.08-.3-.16-1.3-.48-2.5-1.53-.93-.74-1.5-1.66-1.68-1.96-.17-.3-.02-.45.13-.61.14-.14.32-.36.47-.55.15-.2.2-.32.3-.54.1-.22.05-.4-.02-.56-.08-.16-.64-1.55-.88-2.1-.23-.55-.47-.47-.64-.48h-.55c-.19 0-.5.07-.76.35s-1 1-1 2.46 1.02 2.86 1.16 3.06c.14.2 2 3.06 4.86 4.29.68.29 1.22.46 1.64.6.69.22 1.33.19 1.83.12.56-.08 1.8-.74 2.06-1.45.26-.71.26-1.3.18-1.44-.08-.14-.28-.22-.58-.38Z"/>
+            </svg>
+          </a>
+          <a class="text-body-secondary" href="mailto:hola@informacionordenada.es" aria-label="Correo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5L4 8V6l8 5 8-5v2Z"/>
+            </svg>
+          </a>
+          <a class="text-body-secondary" href="https://maps.app.goo.gl/AAcWrhmBZ4fbmvtNA?g_st=ipc" target="_blank" rel="noopener" aria-label="Google Business">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C8.7 2 6 4.7 6 8c0 5 6 12 6 12s6-7 6-12c0-3.3-2.7-6-6-6Zm0 8.5A2.5 2.5 0 1 1 12 5a2.5 2.5 0 0 1 0 5Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="footer__column footer__side">
-      <div class="footer__map io-map">
-        <iframe
-          title="Ubicación aproximada en l'Horta Nord"
-          src="https://www.google.com/maps?q=l%27Horta+Nord,+Valencia,+España&output=embed"
-          width="100%"
-          height="260"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
-      <div class="payments">
-        <strong>Formas de pago</strong>
-        <ul class="io-paylist" aria-label="Formas de pago aceptadas">
-          <li><img src="{{ '/assets/img/payments/visa.svg' | relative_url }}" alt="Visa" width="40" height="24" loading="lazy" decoding="async"></li>
-          <li><img src="{{ '/assets/img/payments/mastercard.svg' | relative_url }}" alt="Mastercard" width="40" height="24" loading="lazy" decoding="async"></li>
-          <li><img src="{{ '/assets/img/payments/paypal.svg' | relative_url }}" alt="PayPal" width="40" height="24" loading="lazy" decoding="async"></li>
-          <li><img src="{{ '/assets/img/payments/bizum.svg' | relative_url }}" alt="Bizum" width="40" height="24" loading="lazy" decoding="async"></li>
-          <li><img src="{{ '/assets/img/payments/sepa.svg' | relative_url }}" alt="Transferencia SEPA" width="40" height="24" loading="lazy" decoding="async"></li>
+    <!-- Fila pagos + mapa -->
+    <div class="row gy-4 mt-4">
+      <div class="col-12 col-md-6">
+        <strong class="d-block mb-2">Formas de pago</strong>
+        <ul class="list-unstyled d-flex align-items-center flex-wrap gap-3 mb-3">
+          <li><img src="{{ '/assets/img/payments/visa.svg' | relative_url }}" alt="Visa" width="44" height="28" loading="lazy" decoding="async"></li>
+          <li><img src="{{ '/assets/img/payments/mastercard.svg' | relative_url }}" alt="Mastercard" width="44" height="28" loading="lazy" decoding="async"></li>
+          <li><img src="{{ '/assets/img/payments/paypal.svg' | relative_url }}" alt="PayPal" width="44" height="28" loading="lazy" decoding="async"></li>
+          <li><img src="{{ '/assets/img/payments/bizum.svg' | relative_url }}" alt="Bizum" width="44" height="28" loading="lazy" decoding="async"></li>
+          <li><img src="{{ '/assets/img/payments/sepa.svg' | relative_url }}" alt="Transferencia SEPA" width="44" height="28" loading="lazy" decoding="async"></li>
         </ul>
 
-        <div class="payments__actions">
-          <a class="pill" href="https://pay.stripe.com/tu-enlace" rel="nofollow noopener">Pagar con tarjeta</a>
-          <a class="pill" href="https://paypal.me/informacionordenada?country.x=ES&locale.x=es_ES" rel="nofollow noopener">PayPal</a>
-          <span class="pill">Bizum: 684 784 784</span>
+        <div class="d-flex flex-wrap gap-2 mb-2">
+          <a class="badge rounded-pill text-bg-light text-decoration-none" href="https://pay.stripe.com/tu-enlace" rel="nofollow noopener">Pagar con tarjeta</a>
+          <a class="badge rounded-pill text-bg-light text-decoration-none" href="https://paypal.me/informacionordenada?country.x=ES&locale.x=es_ES" rel="nofollow noopener">PayPal</a>
+          <span class="badge rounded-pill text-bg-light">Bizum: 684 784 784</span>
         </div>
 
-        <details class="payments__details">
-          <summary class="pill">Datos de transferencia</summary>
-          <div>
+        <details class="mt-2">
+          <summary class="badge rounded-pill text-bg-light">Datos de transferencia</summary>
+          <div class="mt-2 small">
             <div><strong>Beneficiario:</strong> Información Ordenada</div>
             <div><strong>IBAN:</strong> ES00 0000 0000 00 0000000000</div>
             <div><strong>Concepto:</strong> Suscripción + Nombre de la empresa</div>
           </div>
         </details>
+
+        <small class="text-muted d-block mt-3">
+          Este sitio no utiliza cookies propias ni de terceros con fines analíticos o publicitarios.
+        </small>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="ratio ratio-16x9">
+          <iframe
+            title="Ubicación aproximada en l'Horta Nord"
+            src="https://www.google.com/maps?q=l%27Horta+Nord,+Valencia,+España&output=embed"
+            loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
     </div>
   </div>
