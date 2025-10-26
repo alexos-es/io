@@ -16,3 +16,53 @@ article.card { border:1px solid #eee; border-radius:12px; padding:16px; backgrou
 
 /* IO Bootstrap tweaks */
 .container { max-width: 1100px; }
+
+:root {
+  --io-primary: #3A86FF;        /* azul principal */
+  --io-secondary: #F8F9FA;      /* fondo claro */
+  --io-dark: #111;              /* texto principal */
+  --io-muted: #6C757D;          /* texto secundario */
+}
+
+body {
+  color: var(--io-dark);
+  background-color: #fff;
+}
+
+/* enlaces y acentos */
+a {
+  color: var(--io-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover, .nav-link:hover, .badge:hover {
+  color: darken(var(--io-primary), 10%);
+}
+
+/* botones y “pills” personalizados */
+.badge, .pill, .btn-primary {
+  background-color: var(--io-primary);
+  color: #fff !important;
+  border: none;
+}
+.badge:hover, .pill:hover, .btn-primary:hover {
+  background-color: #005fd6;
+}
+
+/* nav y header */
+.navbar {
+  background-color: var(--io-secondary) !important;
+}
+.navbar .nav-link.active {
+  color: var(--io-primary) !important;
+}
+
+/* footer */
+footer {
+  background-color: var(--io-secondary);
+  color: var(--io-dark);
+}
+footer a:hover {
+  color: var(--io-primary);
+}
+
