@@ -190,7 +190,7 @@ body { scroll-padding-top: var(--io-header-h); }
   text-align: center;
   color: var(--io-dark);
   padding: 5rem 0;
-  background: url('{{ "/assets/img/informacionordenada.webp" | relative_url }}') center/contain no-repeat;
+  background: url('{{ "/assets/img/informacionordenada.webp" | relative_url }}') center/cover no-repeat;
   background-color: #fff;
 }
 
