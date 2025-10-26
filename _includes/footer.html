@@ -1,21 +1,32 @@
 <footer>
   <div class="container footer">
     <div class="footer__column footer__main">
-      <small class="desc">© <span id="y"></span> Información Ordenada · <a href="https://maps.app.goo.gl/PWRqe5FyUJcn8Xoh7">l'Horta Nord, Valencia, España</a></small>
+      <small class="desc">
+        © <span id="y">{{ "now" | date: "%Y" }}</span> Información Ordenada ·
+        <a href="https://maps.app.goo.gl/PWRqe5FyUJcn8Xoh7" target="_blank" rel="noopener">
+          l'Horta Nord, Valencia, España
+        </a>
+      </small>
 
       <nav class="footer__links" aria-label="Enlaces legales y técnicos">
-        <a class="pill" href="/legal/">Aviso legal</a>
-        <a class="pill" href="/privacidad/">Privacidad</a>
+        <a class="pill" href="{{ '/legal/' | relative_url }}">Aviso legal</a>
+        <a class="pill" href="{{ '/privacidad/' | relative_url }}">Privacidad</a>
         <span class="pill">GitHub Pages</span>
         <span class="pill">HTML estático</span>
       </nav>
 
-      <div class="social-icons">
-        <a class="instagram" href="https://www.instagram.com/informacionordenada/" target="_blank" rel="noopener" aria-label="Instagram Información Ordenada">
-          <svg viewBox="0 0 448 512" width="20" height="20" fill="#111"><path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.34-30.34C298,125.33,224,125.33,224,125.33s-74,0-94.37,5.95a54,54,0,0,0-30.34,30.34C93.33,146,93.33,220,93.33,220s0,74,5.95,94.37a54,54,0,0,0,30.34,30.34C146,349.33,220,349.33,220,349.33s74,0,94.37-5.95a54,54,0,0,0,30.34-30.34C349.33,294,349.33,220,349.33,220S349.33,146,348.71,161.66ZM224,338a82,82,0,1,1,82-82A82,82,0,0,1,224,338ZM308,179.47a19.2,19.2,0,1,1,19.2-19.2A19.21,19.21,0,0,1,308,179.47Z"/></svg>
+      <div class="social-icons" aria-label="Redes sociales">
+        <a class="instagram link-secondary" href="https://www.instagram.com/informacionordenada/" target="_blank" rel="noopener" aria-label="Instagram Información Ordenada">
+          <!-- usa currentColor para heredar color del texto -->
+          <svg viewBox="0 0 448 512" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M224,202.66A53.34,53.34,0,1,0,277.34,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.34-30.34C298,125.33,224,125.33,224,125.33s-74,0-94.37,5.95a54,54,0,0,0-30.34,30.34C93.33,146,93.33,220,93.33,220s0,74,5.95,94.37a54,54,0,0,0,30.34,30.34C146,349.33,220,349.33,220,349.33s74,0,94.37-5.95a54,54,0,0,0,30.34-30.34C349.33,294,349.33,220,349.33,220S349.33,146,348.71,161.66ZM224,338a82,82,0,1,1,82-82A82,82,0,0,1,224,338ZM308,179.47a19.2,19.2,0,1,1,19.2-19.2A19.21,19.21,0,0,1,308,179.47Z"/>
+          </svg>
         </a>
-        <a class="linkedin" href="https://www.linkedin.com/company/105128702" target="_blank" rel="noopener" aria-label="LinkedIn Información Ordenada">
-          <svg viewBox="0 0 448 512" width="20" height="20" fill="#111"><path d="M100.28 448H7.4V148.9h92.88zm-46.44-340C24.8 108 83.2 0 52.4 0 23.5 24.8 0 53.84 0s53.8 23.5 53.8 52.4c0 30.8-24.8 55.6-53.8 55.6zM447.9 448h-92.6V302.4c0-34.7-.7-79.4-48.4-79.4-48.5 0-55.9 37.9-55.9 77v148H158.3V148.9h89v40.8h1.3c12.4-23.5 42.6-48.4 87.8-48.4 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+
+        <a class="linkedin link-secondary" href="https://www.linkedin.com/company/105128702" target="_blank" rel="noopener" aria-label="LinkedIn Información Ordenada">
+          <svg viewBox="0 0 448 512" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340C24.8 108 83.2 0 52.4 0 23.5 24.8 0 53.84 0s53.8 23.5 53.8 52.4c0 30.8-24.8 55.6-53.8 55.6zM447.9 448h-92.6V302.4c0-34.7-.7-79.4-48.4-79.4-48.5 0-55.9 37.9-55.9 77v148H158.3V148.9h89v40.8h1.3c12.4-23.5 42.6-48.4 87.8-48.4 94 0 111.3 61.9 111.3 142.3V448z"/>
+          </svg>
         </a>
       </div>
 
@@ -29,19 +40,19 @@
           src="https://www.google.com/maps?q=l%27Horta+Nord,+Valencia,+España&output=embed"
           width="100%"
           height="260"
-          allowfullscreen
           loading="lazy"
+          allowfullscreen
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
       <div class="payments">
         <strong>Formas de pago</strong>
         <ul class="io-paylist" aria-label="Formas de pago aceptadas">
-          <li><img src="/assets/img/payments/visa.svg" alt="Visa" width="40" height="24" loading="lazy" decoding="async"></li>
-          <li><img src="/assets/img/payments/mastercard.svg" alt="Mastercard" width="40" height="24" loading="lazy" decoding="async"></li>
-          <li><img src="/assets/img/payments/paypal.svg" alt="PayPal" width="40" height="24" loading="lazy" decoding="async"></li>
-          <li><img src="/assets/img/payments/bizum.svg" alt="Bizum" width="40" height="24" loading="lazy" decoding="async"></li>
-          <li><img src="/assets/img/payments/sepa.svg" alt="Transferencia SEPA" width="40" height="24" loading="lazy" decoding="async"></li>
+          <li><img src="{{ '/assets/img/payments/visa.svg' | relative_url }}" alt="Visa" width="40" height="24" loading="lazy" decoding="async"></li>
+          <li><img src="{{ '/assets/img/payments/mastercard.svg' | relative_url }}" alt="Mastercard" width="40" height="24" loading="lazy" decoding="async"></li>
+          <li><img src="{{ '/assets/img/payments/paypal.svg' | relative_url }}" alt="PayPal" width="40" height="24" loading="lazy" decoding="async"></li>
+          <li><img src="{{ '/assets/img/payments/bizum.svg' | relative_url }}" alt="Bizum" width="40" height="24" loading="lazy" decoding="async"></li>
+          <li><img src="{{ '/assets/img/payments/sepa.svg' | relative_url }}" alt="Transferencia SEPA" width="40" height="24" loading="lazy" decoding="async"></li>
         </ul>
 
         <div class="payments__actions">
@@ -62,4 +73,3 @@
     </div>
   </div>
 </footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
