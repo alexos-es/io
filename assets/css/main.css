@@ -195,13 +195,15 @@ body { scroll-padding-top: var(--io-header-h); }
 }
 
 /* Degradado blanco sutil para mejor legibilidad del texto */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.97) 70%);
-  z-index: 1;
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  /* sutil: deja ver claramente la imagen */
+  background: linear-gradient(to bottom, rgba(255,255,255,.18), rgba(255,255,255,.38) 70%);
+  z-index:1;
 }
+
 
 /* Contenido del Hero */
 .hero-overlay {
