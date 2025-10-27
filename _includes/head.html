@@ -1,12 +1,17 @@
-<!-- HEAD COMÚN (OPTIMIZADO, sin style.css) -->
+<!-- HEAD COMÚN (OPTIMIZADO) -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>{{ page.title | default: "Información Ordenada · Consultoría y soporte técnico" }}</title>
 <meta name="description" content="{{ page.description | default: 'Consultoría y soporte técnico remoto para autónomos y pequeños negocios.' }}">
 <meta name="robots" content="{{ page.robots | default: 'index,follow' }}">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#111">
-<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="canonical" href="{{ page.url | absolute_url | replace:'index.html','' }}">
+
+<!-- DNS-Perf -->
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 
 <!-- Favicons / manifest -->
 <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
@@ -19,32 +24,48 @@
       integrity="sha384-9ndCyUa6mY5o0t3n5vB8a1I1QdZrj7lG2t5rxyi0E1C5rjFQCuImG7Nw9a1F9a7p"
       crossorigin="anonymous">
 
-<!-- CSS principal -->
+<!-- CSS principal (cache-bust) -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
-<!-- OG / Twitter -->
+<!-- Open Graph / Twitter -->
 <meta property="og:title" content="{{ page.title | default: 'Información Ordenada' }}">
 <meta property="og:description" content="{{ page.description | default: 'Soporte y consultoría IT sin ruido.' }}">
 <meta property="og:image" content="{{ '/preview.jpg' | absolute_url }}">
-<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:url" content="{{ page.url | absolute_url | replace:'index.html','' }}">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Información Ordenada">
+<meta property="og:locale" content="es_ES">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title | default: 'Información Ordenada' }}">
+<meta name="twitter:description" content="{{ page.description | default: 'Soporte y consultoría IT sin ruido.' }}">
+<meta name="twitter:image" content="{{ '/preview.jpg' | absolute_url }}">
 
-<!-- Google Analytics -->
+<!-- Google Analytics (GA4) con Consent Mode básico + IP anon -->
+<script>
+  // Modo consentimiento básico (ajusta cuando tengas banner de cookies)
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'granted',
+    'functionality_storage': 'granted',
+    'security_storage': 'granted',
+    'wait_for_update': 500
+  });
+</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CW7VD8J6G1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-CW7VD8J6G1');
+  gtag('config', 'G-CW7VD8J6G1', { 'anonymize_ip': true });
 </script>
-<!-- End Google Analytics -->
 
 <!-- Datos estructurados (Schema.org) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "ProfessionalService",
   "name": "Información Ordenada",
   "image": "https://informacionordenada.es/preview.jpg",
   "url": "https://informacionordenada.es",
@@ -52,9 +73,16 @@
   "email": "hola@informacionordenada.es",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "l'Horta Nord, Valencia",
+    "addressLocality": "l'Horta Nord",
+    "addressRegion": "Valencia",
     "addressCountry": "ES"
   },
-  "description": "Consultoría y soporte técnico remoto para autónomos y pequeños negocios."
+  "areaServed": "Valencia",
+  "priceRange": "€€",
+  "description": "Consultoría y soporte técnico remoto para autónomos y pequeños negocios.",
+  "sameAs": [
+    "https://www.linkedin.com/company/informacionordenada/",
+    "https://www.instagram.com/informacionordenada/"
+  ]
 }
 </script>
