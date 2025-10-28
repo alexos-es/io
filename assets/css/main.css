@@ -227,3 +227,7 @@ body { scroll-padding-top: var(--io-header-h); }
 @media (min-width: 768px) {
   .hero h1 { font-size: 3rem; }
 }
+
+:root { --io-header-h: 64px; }
+@media (min-width: 992px){ :root { --io-header-h: 72px; } }
+body { scroll-padding-top: var(--io-header-h); }
