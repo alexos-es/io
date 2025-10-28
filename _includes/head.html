@@ -24,6 +24,19 @@
       integrity="sha384-9ndCyUa6mY5o0t3n5vB8a1I1QdZrj7lG2t5rxyi0E1C5rjFQCuImG7Nw9a1F9a7p"
       crossorigin="anonymous">
 
+<!-- Bootstrap Icons (faltaba) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- CSS principal (cache-bust) -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+
+<!-- Ajustes de layout que antes estaban en default.html -->
+<style>
+  :root { --io-header-h: 64px; }
+  @media (min-width: 992px){ :root { --io-header-h: 72px; } }
+  body { scroll-padding-top: var(--io-header-h); }
+</style>
+
 <!-- CSS principal (cache-bust) -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
