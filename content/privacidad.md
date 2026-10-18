@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: legal
 title: "Política de privacidad · Información Ordenada"
 description: "Política de privacidad y tratamiento de datos personales en informacionordenada.es."
 permalink: /privacidad/

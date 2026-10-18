@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: legal
 title: "Aviso legal · Información Ordenada"
 description: "Información legal del sitio informacionordenada.es: titularidad, contacto y condiciones de uso."
 permalink: /legal/
