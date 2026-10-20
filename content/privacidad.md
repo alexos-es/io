@@ -8,7 +8,7 @@ robots: index,follow
 
 # Política de privacidad
 
-**Última actualización: 18 de octubre de 2026**
+**Última actualización: 20 de octubre de 2026**
 
 Aquí explicamos qué datos tratamos cuando contactas con Información Ordenada, para qué se utilizan y cómo puedes ejercer tus derechos.
 
@@ -97,6 +97,16 @@ Los datos deben tratarse con confidencialidad y con medidas de seguridad adecuad
 
 Si necesitas facilitar documentación o accesos para una intervención, acordaremos previamente el medio adecuado.
 
-## 9. Cambios en esta política
+<h2 id="analitica">9. Analítica y preferencias de cookies</h2>
+
+Utilizamos Google Analytics 4, de Google Ireland Limited, únicamente cuando aceptas las cookies de analítica. Sirve para medir visitas, páginas consultadas y clics en los enlaces de contacto por WhatsApp y correo. No enviamos a Analytics el contenido de tus mensajes ni los datos introducidos en una consulta. La base de este tratamiento es tu consentimiento.
+
+Hasta que aceptes, la etiqueta de Analytics permanece bloqueada. Puedes rechazar la medición sin que afecte al uso de la web. No activamos funciones publicitarias ni Google Signals en la etiqueta.
+
+Analytics puede utilizar las cookies `_ga` y `_ga_SDKCB266G6` para distinguir navegadores y sesiones; su duración predeterminada puede alcanzar los dos años. Guardamos tu elección de consentimiento en el almacenamiento local del navegador (`io-analytics-consent-v1`) durante un máximo de 180 días. Puedes cambiarla o retirarla desde «Configurar cookies», al pie de las páginas. Al rechazar, bloqueamos la medición y eliminamos las cookies de Analytics accesibles desde esta web. La retirada no afecta a los datos tratados anteriormente.
+
+Google recibe datos técnicos y de uso cuando autorizas la medición y puede tratarlos internacionalmente conforme a sus condiciones y garantías. Consulta la [información de privacidad de Google Analytics](https://support.google.com/analytics/answer/6004245?hl=es) y la [política de privacidad de Google](https://policies.google.com/privacy?hl=es). Puedes ejercer los derechos indicados en el apartado 7.
+
+## 10. Cambios en esta política
 
 Esta política se actualizará cuando cambien los servicios o los tratamientos descritos. La fecha que aparece al inicio permite identificar la versión publicada. Cuando sea necesario, los cambios relevantes se comunicarán por los medios adecuados.
