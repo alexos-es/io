@@ -6,6 +6,15 @@ url: "https://informacionordenada.es"     # se completará automáticamente en G
 lang: es
 timezone: "Europe/Madrid"
 
+# Documentación y versiones de trabajo: conservar en Git, fuera de la web.
+exclude:
+  - README.md
+  - README_FIX_NOTES.md
+  - vista-previa.html
+  - new-site
+  - preview.png
+  - preview.jpg
+
 # Colección de casos de éxito
 collections:
   content:
