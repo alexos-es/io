@@ -3,7 +3,7 @@
   'use strict';
   if (window.ioAnalyticsInstalled) return;
   window.ioAnalyticsInstalled = true;
-  const id = 'G-SDKCB266G6';
+  const id = 'G-CW7VD8J6G1';
   const key = 'io-analytics-consent-v1';
   const lifetime = 180 * 24 * 60 * 60 * 1000;
   let granted = false;
